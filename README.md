@@ -1,6 +1,6 @@
 #git OST feat. LA Hacks OST by LA Hacks
 
-Any respectable programmer knows the feeling of ecstasy and joy that comes with commiting changes to a repository. Sometimes, those changes are so epic in size that they demand legendary background music. Introducing the _git OST feat. LA Hacks OST by LA Hacks_.
+Any respectable programmer knows the feeling of ecstasy and joy that comes with committing changes to a repository. Sometimes, those changes are so epic in size that they demand legendary background music. Introducing the _git OST feat. LA Hacks OST by LA Hacks_.
 
 ##How it works
 
