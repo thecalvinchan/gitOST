@@ -6,7 +6,7 @@ Any respectable programmer knows the feeling of ecstasy and joy that comes with 
 
 __git OST__ will run in the background and watch your git repositories for changes. It polls to determine the size of your code base, and everytime you add files to your staging area, it compares the magnitude of your staged changes to your entire code base. If the ratio of your changes to the size of your code base exceeds the threshold, the LAHacks OST will start playing (and you will receive a notification) indicating that it is time to commit.
 
-_Stage your changes. When your staged changes reach a level worthy of the LA Hacks OST, it will grace you with it's soothing music_.
+_Stage your changes. When your staged changes reach a level worthy of the LA Hacks OST, it will grace you with its soothing music_.
 
 ##Install
 
