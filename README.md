@@ -8,6 +8,10 @@ __git OST__ will run in the background and watch your git repositories for chang
 
 _Stage your changes. When your staged changes reach a level worthy of the LA Hacks OST, it will grace you with its soothing music_.
 
+##Demo
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/EzD2CPBGHTg" frameborder="0" allowfullscreen></iframe>
+
 ##Install
 
 Are you running OS X? Then you can cry tears of joy because you get full support right out of the box!
