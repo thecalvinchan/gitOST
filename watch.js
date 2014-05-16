@@ -32,7 +32,6 @@ var checkGitDiff = "git diff --cached | grep ^[+-] | wc -l";
 var paths = process.env.GIT_OST;
 if (paths) {
     paths = paths.split(':');
-    console.log(paths);
 } else {
     process.stderr.write("Error: GIT_OST environment variable is not set properly. Please set directories to watch");
     process.exit(1);
@@ -57,7 +56,6 @@ wau.countLines = function (directory, callback) {
 }
 
 for (var i in paths) {
-    console.log(i);
     wau.countLines(paths[i]+'/', function(directory) {
         console.log("Watching directory: ", directory);
         fs.watchFile(directory+'/.git/index', function(curr,prev) {
@@ -71,6 +69,7 @@ for (var i in paths) {
                 console.log("Lines changed: ", linesChanged);
                 console.log("Percentage changed: ", linesChanged/denominator);
                 if (linesChanged/denominator > diffThreshold) {
+                    // TODO: If you're on linux, this isn't going to work. Take out the terminal-notifier command
                     exec(target.process+'terminal-notifier -message "DIR: '+directory+'" -title "IT\'s TIME TO COMMIT"', target.config, function(err,stdout,stderr) {
                         if (err || stderr) {
                             process.stderr.write("Error: "+(err||stderr));
@@ -82,5 +81,5 @@ for (var i in paths) {
     });
     // Polls to update line count. 
     // TODO: need to write a listener on git commit instead
-    //setInterval(wau.countLines, 60000, paths[i]);
+    setInterval(wau.countLines, 60000, paths[i]);
 }
