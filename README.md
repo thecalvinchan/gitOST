@@ -10,7 +10,7 @@ _Stage your changes. When your staged changes reach a level worthy of the LA Hac
 
 ##Demo
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/EzD2CPBGHTg" frameborder="0" allowfullscreen></iframe>
+[git OST in action](https://www.youtube.com/watch?v=EzD2CPBGHTg)
 
 ##Install
 
