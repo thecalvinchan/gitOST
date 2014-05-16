@@ -20,7 +20,7 @@ Alternatively:
 
 Download/clone this repo and run:
 
-`node watch.js`
+`node gitost.js`
 
 If you're on Linux, you're going to have change some config settings to experience the brilliance that is git OST. Open gitost.js with the editor of your choice.
 
